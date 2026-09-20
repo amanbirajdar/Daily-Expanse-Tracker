@@ -27,26 +27,28 @@ A responsive PHP and MySQL web application for recording expenses, managing budg
 
 ## Interface Preview
 
+These screenshots are the project's own interface captures stored in this repository.
+
 ### Landing page
-![Landing page](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/1.png)
+![Landing page](screenshot/1.png)
 
 ### Login
-![Login page](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/2.png)
+![Login page](screenshot/2.png)
 
 ### Dashboard
-![Dashboard](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/3.png)
+![Dashboard](screenshot/3.png)
 
 ### Add expense
-![Add expense form](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/4.png)
+![Add expense form](screenshot/4.png)
 
 ### Budget management
-![Budget management](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/5.png)
+![Budget management](screenshot/5.png)
 
 ### Expense reports
-![Expense reports](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/6.png)
+![Expense reports](screenshot/6.png)
 
 ### Profile settings
-![Profile settings](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/7.png)
+![Profile settings](screenshot/7.png)
 
 ## Local Setup with XAMPP
 
