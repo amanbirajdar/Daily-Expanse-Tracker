@@ -2,7 +2,9 @@
 
 A responsive PHP and MySQL web application for recording expenses, managing budgets, storing receipts, and understanding spending patterns through interactive reports.
 
-> **Project status:** This repository contains the PHP/MySQL application. A public live URL requires deployment to a PHP/MySQL hosting provider; the local XAMPP URL is not accessible from other laptops.
+> **Live demo:** [dailyexpansetracker.infinityfreeapp.com](https://dailyexpansetracker.infinityfreeapp.com/)
+>
+> **Project status:** This repository contains the PHP/MySQL application. The public demo is hosted on a free PHP/MySQL provider for preview purposes.
 
 ## Highlights
 
