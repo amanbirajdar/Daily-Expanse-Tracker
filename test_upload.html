@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-container { max-width: 600px; margin: 0 auto; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        .file-input { margin: 10px 0; }
+        .result { margin: 10px 0; padding: 10px; background: #f5f5f5; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>File Upload Test</h1>
+        
+        <div class="test-section">
+            <h2>Supported File Types Test</h2>
+            <p>Test the file input with different file types to verify acceptance:</p>
+            
+            <div class="file-input">
+                <label for="testFile">Select a file:</label>
+                <input type="file" id="testFile" accept="image/*,.pdf,.doc,.docx,.txt,.rtf,.xls,.xlsx,.csv,.zip,.rar">
+            </div>
+            
+            <div id="fileInfo" class="result" style="display: none;">
+                <h3>File Information:</h3>
+                <p><strong>Name:</strong> <span id="fileName"></span></p>
+                <p><strong>Type:</strong> <span id="fileType"></span></p>
+                <p><strong>Size:</strong> <span id="fileSize"></span></p>
+                <p><strong>Status:</strong> <span id="fileStatus"></span></p>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Supported Formats</h2>
+            <ul>
+                <li><strong>Images:</strong> JPG, PNG, GIF, BMP, WebP, TIFF, SVG</li>
+                <li><strong>Documents:</strong> PDF, Word (DOC/DOCX), Text (TXT/RTF)</li>
+                <li><strong>Spreadsheets:</strong> Excel (XLS/XLSX), CSV</li>
+                <li><strong>Archives:</strong> ZIP, RAR</li>
+                <li><strong>Max Size:</strong> 50MB</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('testFile');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const fileType = document.getElementById('fileType');
+        const fileSize = document.getElementById('fileSize');
+        const fileStatus = document.getElementById('fileStatus');
+
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        function validateFile(file) {
+            const maxSize = 50 * 1024 * 1024; // 50MB
+            const allowedTypes = [
+                // Images
+                'image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/bmp', 
+                'image/webp', 'image/tiff', 'image/svg+xml',
+                // Documents
+                'application/pdf', 'application/msword', 
+                'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+                'text/plain', 'application/rtf',
+                // Spreadsheets
+                'application/vnd.ms-excel', 
+                'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                'text/csv',
+                // Archives
+                'application/zip', 'application/x-rar-compressed', 'application/x-zip-compressed'
+            ];
+            
+            if (!allowedTypes.includes(file.type)) {
+                return { valid: false, message: 'File type not supported' };
+            }
+            
+            if (file.size > maxSize) {
+                return { valid: false, message: 'File size too large (max 50MB)' };
+            }
+            
+            return { valid: true, message: 'File is valid' };
+        }
+
+        fileInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const validation = validateFile(file);
+                
+                fileName.textContent = file.name;
+                fileType.textContent = file.type;
+                fileSize.textContent = formatFileSize(file.size);
+                fileStatus.textContent = validation.message;
+                fileStatus.style.color = validation.valid ? 'green' : 'red';
+                
+                fileInfo.style.display = 'block';
+            } else {
+                fileInfo.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
