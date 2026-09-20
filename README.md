@@ -27,28 +27,28 @@ A responsive PHP and MySQL web application for recording expenses, managing budg
 
 ## Interface Preview
 
-These screenshots are the project's own interface captures stored in this repository.
+These screenshots are the project's own interface captures stored in the repository root. The image links below intentionally match the files visible in the repository file list.
 
 ### Landing page
-![Landing page](screenshot/1.png)
+![Landing page](./1.png)
 
 ### Login
-![Login page](screenshot/2.png)
+![Login page](./2.png)
 
 ### Dashboard
-![Dashboard](screenshot/3.png)
+![Dashboard](./3.png)
 
 ### Add expense
-![Add expense form](screenshot/4.png)
+![Add expense form](./4.png)
 
 ### Budget management
-![Budget management](screenshot/5.png)
+![Budget management](./5.png)
 
 ### Expense reports
-![Expense reports](screenshot/6.png)
+![Expense reports](./6.png)
 
 ### Profile settings
-![Profile settings](screenshot/7.png)
+![Profile settings](./7.png)
 
 ## Local Setup with XAMPP
 
