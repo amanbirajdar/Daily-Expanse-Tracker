@@ -27,28 +27,28 @@ A responsive PHP and MySQL web application for recording expenses, managing budg
 
 ## Interface Preview
 
-These screenshots are the project's own interface captures stored in the repository root. The image links below intentionally match the files visible in the repository file list.
+All images below are real screenshots captured from this repository's own Expance Daily Expense Tracker application. They are stored in the repository root and are not images from another project.
+
+### Login page
+![Expance login page](./1.png)
+
+### Dashboard overview
+![Expance dashboard overview](./2.png)
+
+### Dashboard charts and actions
+![Expance dashboard charts](./3.png)
 
 ### Landing page
-![Landing page](./1.png)
+![Expance landing page](./4.png)
 
-### Login
-![Login page](./2.png)
-
-### Dashboard
-![Dashboard](./3.png)
-
-### Add expense
-![Add expense form](./4.png)
+### Add expense form
+![Expance add expense form](./5.png)
 
 ### Budget management
-![Budget management](./5.png)
+![Expance budget management](./6.png)
 
 ### Expense reports
-![Expense reports](./6.png)
-
-### Profile settings
-![Profile settings](./7.png)
+![Expance expense reports](./7.png)
 
 ## Local Setup with XAMPP
 
