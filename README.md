@@ -2,7 +2,7 @@
 
 A responsive PHP and MySQL web application for recording expenses, managing budgets, storing receipts, and understanding spending patterns through interactive reports.
 
-> **Project status:** This repository contains the complete local application. A public live URL requires deployment to a PHP/MySQL hosting provider; the local XAMPP URL is not accessible from other laptops.
+> **Project status:** This repository contains the PHP/MySQL application. A public live URL requires deployment to a PHP/MySQL hosting provider; the local XAMPP URL is not accessible from other laptops.
 
 ## Highlights
 
@@ -25,15 +25,28 @@ A responsive PHP and MySQL web application for recording expenses, managing budg
 - Chart.js for reports
 - Apache through XAMPP, or another PHP-compatible web server
 
-## Screenshots
+## Interface Preview
 
-![Landing page](screenshot/1.png)
-![Login page](screenshot/2.png)
-![Dashboard](screenshot/3.png)
-![Add expense form](screenshot/4.png)
-![Budget management](screenshot/5.png)
-![Expense reports](screenshot/6.png)
-![Profile settings](screenshot/7.png)
+### Landing page
+![Landing page](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/1.png)
+
+### Login
+![Login page](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/2.png)
+
+### Dashboard
+![Dashboard](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/3.png)
+
+### Add expense
+![Add expense form](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/4.png)
+
+### Budget management
+![Budget management](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/5.png)
+
+### Expense reports
+![Expense reports](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/6.png)
+
+### Profile settings
+![Profile settings](https://raw.githubusercontent.com/Tarekuzjaman0/Daily-Expanse-Tracker/main/screenshot/7.png)
 
 ## Local Setup with XAMPP
 
@@ -46,7 +59,7 @@ A responsive PHP and MySQL web application for recording expenses, managing budg
 
 2. Start Apache and MySQL from XAMPP.
 3. Import `database.sql` into MySQL. It creates the `Expance_db` database.
-4. Check database credentials in `config/database.php`.
+4. Update `config/database.php` with your MySQL credentials.
 5. Open `http://localhost/Daily-Expanse-Tracker/`.
 6. Register an account and use Reports to view the charts.
 

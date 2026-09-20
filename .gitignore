@@ -1,0 +1,8 @@
+uploads/receipts/*
+!uploads/receipts/.gitkeep
+**/uploads/receipts/*
+!**/uploads/receipts/.gitkeep
+.vscode/*
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
